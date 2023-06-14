@@ -1,0 +1,452 @@
+body {
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 0 0 10rem 0;
+    width: 60%;
+    margin: 5rem auto 3rem;
+    padding: 4rem;
+    position: relative;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 135px);
+    column-gap: 1.5rem;
+}
+
+fieldset {
+    border: none;
+    height: 7.2rem;
+}
+
+h1 {
+    font-size: 6.7rem;
+    font-weight: 800 !important;
+    font-style: italic;
+    line-height: 1;
+    margin: 0;
+}
+
+.dash {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 5px;
+    font-style: italic;
+}
+
+/* Input field styling */
+::placeholder {
+    text-align: left;
+    color: hsl(0, 1%, 44%);
+    font-size: 32px;
+    padding-left: 15px;
+}
+
+input {
+    background-color: inherit;
+    border-radius: 5px;
+    border: hsl(0, 1%, 44%) solid 0.3px;
+
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+
+    padding: 5px;
+    height: 3rem;
+    width: 8rem;
+
+}
+
+input:hover {
+    border-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid hsl(259, 100%, 65%);
+
+}
+
+label {
+    display: block;
+    font-size: 16px;
+}
+
+hr {
+    width: 90%;
+    text-align: start;
+    margin: 3rem 0 2.5rem;
+}
+
+button {
+    background-color: inherit;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 12.8rem;
+    right: 4rem;
+    width: 5.8rem;
+}
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+
+/* Error Message styling  */
+.error {
+    font-size: 12px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+.active {
+    color: hsl(0, 100%, 67%);
+}
+
+.error-Active {
+    border-color: hsl(0, 100%, 67%) !important;
+}
+
+@media (max-width:1024px) and (orientation: landscape) {
+    main {
+        width: 60%;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        column-gap: 2rem;
+    }
+
+    input {
+        border-radius: 5px;
+
+        font-size: 30px;
+
+        padding: 3px;
+        height: 2.8rem;
+        width: 7.5rem;
+    }
+
+    h1 {
+        font-size: 5.3rem;
+        line-height: 1.2;
+    }
+
+    hr {
+        margin: 2.5rem 0 3.6rem !important;
+        width: 95%;
+    }
+
+    ::placeholder {
+        text-align: left;
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    button {
+        position: absolute;
+        top: 12.3rem;
+        right: 4rem;
+        width: 5.5rem;
+    }
+}
+
+@media (max-width:960px) and (orientation:landscape) {
+
+    main {
+        width: 65%;
+    }
+
+    button {
+        position: absolute;
+        top: 12.3rem;
+        right: 4rem;
+        width: 5.5rem;
+    }
+
+    form {
+        display: grid;
+        column-gap: 2rem;
+    }
+
+    hr {
+        margin: 2.5rem 0 3.6rem !important;
+        width: 95%;
+    }
+
+}
+
+@media (max-width:812px) {
+    body {
+        max-width: 812px;
+    }
+
+    hr {
+        margin: 2rem 0 3.6rem !important;
+        width: 95%;
+    }
+
+    button {
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 5.5rem;
+    }
+
+    img {
+        padding: 13px;
+    }
+
+}
+
+@media (max-width:736px) {
+    body {
+        max-width: 735px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+        justify-items: center;
+    }
+
+    hr {
+        margin: 2.5rem 0 3.6rem !important;
+        width: 100%;
+    }
+
+    button {
+        position: absolute;
+        top: 11.2rem;
+        right: 15.5rem;
+        width: 5.5rem;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+@media (max-width:667px) {
+    body {
+        max-width: 667px;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    fieldset {
+        padding: 0;
+    }
+
+    input {
+        font-size: 32px;
+
+        padding: 3px;
+        height: 2.8rem;
+        width: 7.5rem;
+    }
+
+    label {
+        display: block;
+        font-size: 12px;
+    }
+
+    hr {
+        margin: 2rem 0 2rem !important;
+    }
+
+    button {
+        position: absolute;
+        top: 10.5rem;
+        right: 13.5rem;
+        width: 5.5rem;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    .error {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:568px) {
+    body {
+        width: 568px;
+    }
+
+    main {
+        padding: 4rem 2rem;
+        width: 70%;
+    }
+
+    form {
+        column-gap: 0.2rem;
+    }
+
+    fieldset {
+        height: 6rem;
+    }
+
+    input {
+        font-size: 28px;
+
+        padding: 3px;
+        height: 2.6rem;
+        width: 6.4rem;
+    }
+
+    h1 {
+        font-size: 4.3rem;
+        line-height: 1.1 !important;
+    }
+
+    hr {
+        margin: 3.5rem 0 4rem !important;
+    }
+
+    button {
+        position: absolute;
+        top: 11.7rem;
+        right: 11.3rem;
+        width: 5.5rem;
+    }
+
+    ::placeholder {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:430px) {
+    body {
+        max-width: 430px;
+    }
+
+    main {
+        padding: 4rem 2rem;
+        width: 75%;
+    }
+
+    h1 {
+        line-height: 1.2 !important;
+    }
+
+    input {
+        font-size: 28px;
+
+        padding: 3px;
+        height: 2.6rem;
+        width: 6.2rem;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    hr {
+        margin: 3rem 0 3.2rem !important;
+    }
+
+    ::placeholder {
+        font-size: 28px;
+        padding-left: 10px;
+
+    }
+
+    button {
+        padding: 0;
+        position: absolute;
+        top: 11.2rem;
+        right: 9.7rem;
+
+        width: 5rem;
+    }
+}
+
+@media (max-width:375px) {
+    body {
+        max-width: 375px;
+    }
+
+    main {
+        padding: 3.2rem 1.5rem;
+        width: 75%;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2 !important;
+    }
+
+    input {
+        border-radius: 7px;
+        font-size: 28px;
+
+        padding: 0;
+        height: 2.6rem;
+        width: 5rem;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    hr {
+        margin: 2.5rem 0 3.6rem !important;
+    }
+
+    ::placeholder {
+        font-size: 25px;
+        padding-left: 5px;
+
+    }
+
+    button {
+        padding: 0;
+        position: absolute;
+        top: 10.1rem;
+        right: 7.8rem;
+
+        width: 5rem;
+    }
+
+    img {
+        width: 30%;
+    }
+}

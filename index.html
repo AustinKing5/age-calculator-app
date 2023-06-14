@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Google fonts embeding links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* Works for Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <form action="" id="submitForm" novalidate>
+
+      <fieldset>
+        <label for="days">DAY</label>
+        <input type="number" name="days" id="days" aria-placeholder="Days" placeholder="DD" minlength="1" maxlength="2"
+          min="1"><br>
+        <span class="error err-day" aria-live="polite"></span>
+      </fieldset>
+
+      <fieldset>
+        <label for="months">MONTH</label>
+        <input type="number" name="months" id="months" aria-placeholder="Month" placeholder="MM" minlength="1"
+          maxlength="2" min="1"><br>
+        <span class="error err-month" aria-live="polite"></span>
+      </fieldset>
+
+      <fieldset>
+        <label for="years"> YEAR</label>
+        <input type="number" name="years" id="years" aria-placeholder="Year" placeholder="YYYY" minlength="1"
+          maxlength="4" min="1"><br>
+        <span class="error err-year" aria-live="polite"></span>
+      </fieldset>
+
+      <button type="submit">
+        <img src="./assets/images/icon-arrow.svg" alt="" srcset="">
+      </button>
+    </form>
+    <hr>
+
+    <section>
+      <h1><span id="outputYear" class="dash">--</span> years</h1>
+      <h1><span id="outputMonth" class="dash">--</span> months</h1>
+      <h1><span id="outputDay" class="dash">--</span> days</h1>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/AustinKing5">Augustine A. Asare</a>.
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
