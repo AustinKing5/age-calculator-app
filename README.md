@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/AustinKing5/age-calculator-app/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://austinking5.github.io/age-calculator-app/)
 
 ## My process
 I structured my website using semantic html5 markup. styling was done using css and its custom properties such as flexbox and css grid to position some of the elements. This project was to test my ability to implement javascript in a real project situation, hence did not implement any JS library.
