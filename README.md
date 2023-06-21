@@ -50,7 +50,7 @@ I structured my website using semantic html5 markup. styling was done using css 
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Native JavaScript
+- Vanilla JavaScript
 - Desktop-first workflow
 - **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
